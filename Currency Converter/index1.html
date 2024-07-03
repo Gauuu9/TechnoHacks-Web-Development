@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    
+    <div class="container">
+        <div class="main">
+            <div class="form-group">
+                <label for="oamount">Amount to Convert :</label>
+                <input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">From</span>
+                        </div>
+                        <select class="form-control from" id="sel1">
+                            <option value="">Select One …</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="JPY">JPY</option>
+                            <option value="CNY">CNY</option>
+                            <option value="AUD">AUD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="HKD">HKD</option>
+                            <option value="INR">INR</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">To</span>
+                        </div>
+                        <select class="form-control to" id="sel2">
+                            <option value="">Select One …</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="JPY">JPY</option>
+                            <option value="CNY">CNY</option>
+                            <option value="AUD">AUD</option>
+                            <option value="CAD">CAD</option>
+                            <option value="CHF">CHF</option>
+                            <option value="HKD">HKD</option>
+                            <option value="INR">INR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="convert">Convert</button>
+            <h3 class="amount">Amount = </h3>
+            <div id="result"></div>
+        </div>
+        
+    </div>
+    <h1 class="heading">Currency Converter</h1>
+
+    <script src="main1.js"></script>
+</body>
+</html>
