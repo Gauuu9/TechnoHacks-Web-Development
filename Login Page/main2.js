@@ -14,6 +14,8 @@ form.addEventListener('submit', (e) => {
         errorMsg;
 		return;
 	}
+
+	//return
 	const bcrypt = require('bcryptjs');
 	const salt = bcrypt.genSaltSync(10);
 	const hashedPassword = bcrypt.hashSync(password, salt);
